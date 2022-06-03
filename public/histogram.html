@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="histogram.css">
+    </head>
+    <body onload="RefreshHist()">
+        <div id="gradeBounds">
+            <h1 class="sectionHeading">Lower Bounds</h1>
+            <p>Max</p>
+            <input type="number" min="0" max="100" value="100.00" id="maxBound"><br>
+            <p>A+</p>
+            <input type="number" min="0" max="100" value="95.00" id="aPlusBound"><br>
+            <p>A</p>
+            <input type="number" min="0" max="100" value="90.00" id="aBound"><br>
+            <p>A-</p>
+            <input type="number" min="0" max="100" value="85.00" id="aMinusBound"><br>
+            <p>B+</p>
+            <input type="number" min="0" max="100" value="80.00" id="bPlusBound"><br>
+            <p>B</p>
+            <input type="number" min="0" max="100" value="75.00" id="bBound"><br>
+            <p>B-</p>
+            <input type="number" min="0" max="100" value="70.00" id="bMinusBound"><br>
+            <p>C+</p>
+            <input type="number" min="0" max="100" value="65.00" id="cPlusBound"><br>
+            <p>C</p>
+            <input type="number" min="0" max="100" value="60.00" id="cBound"><br>
+            <p>C-</p>
+            <input type="number" min="0" max="100" value="55.00" id="cMinusBound"><br>
+            <p>D</p>
+            <input type="number" min="0" max="100" value="50.00" id="dBound"><br>
+            <p>F</p>
+            <input type="number" min="0" max="100" value="0.00" id="fBound"><br>
+
+            <p id="newBoundErrorMsg"></p>
+        </div>
+        <div id="histogram">
+            <h1 class="sectionHeading">Histogram</h1>
+
+            <p class="gradeTitle">A+</p>
+            <div id="aPlusCount"></div>
+            <p class="gradeCounter" id="aPlusLabel"></p>
+
+            <p class="gradeTitle">A</p>
+            <div id="aCount"></div>
+            <p class="gradeCounter" id="aLabel"></p>
+
+            <p class="gradeTitle">A-</p>
+            <div id="aMinusCount"></div>
+            <p class="gradeCounter" id="aMinusLabel"></p>
+
+            <p class="gradeTitle">B+</p>
+            <div id="bPlusCount"></div>
+            <p class="gradeCounter" id="bPlusLabel"></p>
+
+            <p class="gradeTitle">B</p>
+            <div id="bCount"></div>
+            <p class="gradeCounter" id="bLabel"></p>
+
+            <p class="gradeTitle">B-</p>
+            <div id="bMinusCount"></div>
+            <p class="gradeCounter" id="bMinusLabel"></p>
+
+            <p class="gradeTitle">C+</p>
+            <div id="cPlusCount"></div>
+            <p class="gradeCounter" id="cPlusLabel"></p>
+
+            <p class="gradeTitle">C</p>
+            <div id="cCount"></div>
+            <p class="gradeCounter" id="cLabel"></p>
+
+            <p class="gradeTitle">C-</p>
+            <div id="cMinusCount"></div>
+            <p class="gradeCounter" id="cMinusLabel"></p>
+
+            <p class="gradeTitle">D</p>
+            <div id="dCount"></div>
+            <p class="gradeCounter" id="dLabel"></p>
+
+            <p class="gradeTitle">F</p>
+            <div id="fCount"></div>
+            <p class="gradeCounter" id="fLabel"></p>
+        </div>
+        <div id="newGrade">
+            <p id="newGradeLabel">New Grade:</p>
+            <input type="number" min="0" max="100" id="gradeInput"><br>
+            <p id="newGradeErrorMsg"></p>
+        </div>
+
+        <script src="calculate.js"></script>
+    </body>
+</html>
