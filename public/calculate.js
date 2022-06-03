@@ -122,8 +122,6 @@ document.getElementById("maxBound").addEventListener("change", function(){ Updat
 function UpdateBounds(letterGrade) {
     curr_bound = GetBoundInput(letterGrade);
     curr_bound = Number(curr_bound);
-    DisplayBounds();
-    console.log("letterGrade: " + letterGrade + ", curr_bound: " + curr_bound + ", " + typeof curr_bound);
     let msg;
     if (letterGrade == "f") {
         if (curr_bound < 0 || curr_bound >= d_bound) {
@@ -236,16 +234,12 @@ function UpdateBounds(letterGrade) {
         }
     }
     else if (letterGrade == "a+") {
-        console.log("A+ bound check.");
         if (curr_bound <= a_bound || curr_bound >= max_bound) {
-            console.log("A+ bound error. " + typeof curr_bound);
             msg = "Invalid A+ lower bound. Ensure bounds are within 0-100 and do not overlap.";
             GradeBoundError(letterGrade, msg);
         }
         else { 
-            console.log("A+ bound success.");
             aPlus_bound = curr_bound;
-            console.log("aPlus_bound: " + aPlus_bound);
             GradeBoundNormal(letterGrade);
             RefreshHist();
         }
