@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+
+/*** LOWER BOUNDS ***/
+
+#gradeBounds {
+    width: 48vw;
+    height: 97.5vh;
+    margin: 5px 0 5px 5px;
+    border-radius: 3px;
+    background-color: #E8ECED;
+    padding: 0 20px;
+    float: left;
+}
+
+#gradeBounds .sectionHeading {
+    margin-bottom: 5px;
+}
+
+#gradeBounds p {
+    width: 45%;
+    float: left;
+    clear: left;
+    padding-left: 45px;
+    margin-bottom: 2.5vh;
+}
+
+#gradeBounds input {
+    width: 18%;
+    float: left;
+    text-align: right;
+    padding-right: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+#gradeBounds #newBoundErrorMsg {
+    width: 85%;
+    clear: left;
+    color: #CC0633;
+    visibility: visible;
+    font-weight: bold;
+}
+
+/*** HISTOGRAM ***/
+
+#histogram {
+    width: 48.5vw;
+    height: 60vh;
+    margin: 5px 5px 5px 0;
+    border-radius: 3px;
+    background-color: #E8ECED;
+    padding: 0 0 0 20px;
+    float: right;
+    clear: none;
+}
+
+#histogram .sectionHeading {
+    margin-bottom: 2vh;
+}
+
+#histogram .gradeTitle {
+    width: 40%;
+    float: left;
+    clear: left;
+    padding-left: 30px;
+    margin: 1vh 0;
+}
+
+#histogram div {
+    width: auto;
+    height: 18px;
+    float: left;
+    margin: 1vh 0;
+    background-color: #A6192E;
+}
+
+#histogram .gradeCounter {
+    width: auto;
+    height: 18px;
+    float: left;
+    margin: 1vh;
+}
+
+/*** NEW GRADE ***/
+
+#newGrade {
+    width: 48.5vw;
+    height: 36.4vh;
+    margin: 5px 5px 5px 0;
+    border-radius: 3px;
+    background-color: #E8ECED;
+    padding: 0 20px;
+    float: right;
+    clear: right;
+}
+
+#newGrade #newGradeLabel {
+    font-size: 20px;
+    float: left;
+    margin: 40px 0 10px 0;
+}
+
+#newGrade #gradeInput {
+    width: 30%;
+    float: left;
+    margin: 30px 10px 10px;
+}
+
+#newGrade #newGradeErrorMsg {
+    margin: 0 0 0 108px;
+    clear: left;
+    color: #CC0633;
+    visibility: hidden;
+    font-weight: bold;
+}
+
+/*** OTHER THINGS ***/
+
+.sectionHeading {
+    color: #CC0633;
+    font-weight: 900;
+}
+
+input {
+    padding: 10px;
+}
